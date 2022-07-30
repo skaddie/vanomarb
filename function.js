@@ -9,7 +9,7 @@ $(document).ready(function () {
 			'I am 22 years old.', 
             'I like to travel, modify codes and play games.',
             'I have some basic programming skills on HTML, CSS, JavaScript, PHP, MySQL and C#, JQuery frameworks/libraries.',
-			'Thanks for visiting my personile site',
+			'Thanks for visiting my personal site',
             'Cheers!'
 		],
 		counterS: 0,
