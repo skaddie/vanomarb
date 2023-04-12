@@ -58,7 +58,7 @@ $(document).ready(function () {
 	Regarding my professional skills, I have a solid foundation in programming languages such as HTML, CSS, JavaScript, PHP, MySQL, and C#. I am also familiar with various JQuery frameworks and libraries, which allow me to develop creative and dynamic web applications. I am continuously striving to improve my knowledge and skills in the field of programming, and I believe that lifelong learning is critical to success.
 	
 	Thank you for visiting my personal site, and I hope you enjoyed learning a bit more about me. Please feel free to reach out to me if you have any questions or just want to say hello. Cheers!`;
-	const typingSpeed = 50;
+	const typingSpeed = 150;
 
 	window.onload = function () {
 		const messageEl = document.getElementById("message");
