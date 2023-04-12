@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	const message = `
+	const message = preserveIndent`
     Hi there! It's great to meet you. My name is Van Omar Benaires, and I am a recent graduate who is enthusiastic about exploring the world of technology. At the age of 22, I am excited about what the future holds for me.
 
     One of my biggest passions in life is traveling. I love to explore new places, immerse myself in different cultures, and meet people from all walks of life. In addition to traveling, I also enjoy modifying codes and playing games. These hobbies allow me to sharpen my problem-solving skills and keep my mind sharp.
@@ -9,6 +9,27 @@ $(document).ready(function () {
 
     Thank you for visiting my personal site, and I hope you enjoyed learning a bit more about me. Please feel free to reach out to me if you have any questions or just want to say hello. Cheers!
 `;
+
+	function preserveIndent(strings, ...values) {
+		// Join the strings and values together
+		let output = '';
+		for (let i = 0; i < strings.length; i++) {
+			output += strings[i];
+			if (i < values.length) {
+				output += values[i];
+			}
+		}
+
+		// Match the leading indentation of the first line
+		const match = /^\n\s+/.exec(output);
+		if (match) {
+			const indent = match[0].replace('\n', '');
+			output = output.replace(new RegExp('^' + indent, 'gm'), '');
+		}
+
+		return output;
+	}
+
 
 	const typingSpeed = 20;
 
