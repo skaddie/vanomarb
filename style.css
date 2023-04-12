@@ -171,6 +171,7 @@ div {
   font-size: 25px;
   color: #fff;
   text-align: justify;
+  overflow-y: scroll;
 }
 
 .php {
